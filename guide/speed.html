@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>滚动速度 | vue-table-scroll</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/vue-table-scroll/favicon.ico">
+    <meta name="description" content="A scrollable table">
+    
+    <link rel="preload" href="/vue-table-scroll/assets/css/0.styles.35282816.css" as="style"><link rel="preload" href="/vue-table-scroll/assets/js/app.5eac3da6.js" as="script"><link rel="preload" href="/vue-table-scroll/assets/js/3.e5ea6f79.js" as="script"><link rel="preload" href="/vue-table-scroll/assets/js/32.4f019836.js" as="script"><link rel="prefetch" href="/vue-table-scroll/assets/js/10.9fb34e1c.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/11.e8abf07b.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/12.c7fc2879.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/13.914f2063.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/14.6c6a8040.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/15.980821c4.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/16.2c3610fe.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/17.2bc5c424.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/18.edb831f8.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/19.f99da6e4.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/20.7f90c87b.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/21.e42412da.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/22.50e3254b.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/23.23faebda.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/24.93d9356f.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/25.5c282ab1.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/26.884c5eb0.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/27.8ca26ff5.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/28.b5e1ee88.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/29.270ded6d.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/30.8db6723c.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/31.d5797179.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/33.9d338166.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/34.79a9cd79.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/35.ace2c092.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/36.1211a577.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/37.6c8459b6.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/38.b89f9408.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/39.714f98da.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/4.ba57c70e.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/40.23086413.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/41.599c9efb.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/42.3d78ea47.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/43.e560fd83.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/44.1760c2ca.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/45.a2f89bc9.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/46.8b64b299.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/47.643db18e.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/48.3da873b4.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/5.6afce11b.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/6.d1745ba3.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/7.53efec23.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/8.d73ff110.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/9.107c403f.js"><link rel="prefetch" href="/vue-table-scroll/assets/js/vendors~docsearch.f68603d6.js">
+    <link rel="stylesheet" href="/vue-table-scroll/assets/css/0.styles.35282816.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vue-table-scroll/" class="home-link router-link-active"><!----> <span class="site-name">vue-table-scroll</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vue-table-scroll/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/vue-table-scroll/guide/" class="nav-link router-link-active">
+  Guide
+</a></div><div class="nav-item"><a href="/vue-table-scroll/changelog/" class="nav-link">
+  Changelog
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vue-table-scroll/guide/speed.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/vue-table-scroll/zh/guide/speed.html" class="nav-link">
+  简体中文
+</a></li></ul></div></div> <a href="https://github.com/NexusFeng/vue-table-scroll.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vue-table-scroll/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/vue-table-scroll/guide/" class="nav-link router-link-active">
+  Guide
+</a></div><div class="nav-item"><a href="/vue-table-scroll/changelog/" class="nav-link">
+  Changelog
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vue-table-scroll/guide/speed.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/vue-table-scroll/zh/guide/speed.html" class="nav-link">
+  简体中文
+</a></li></ul></div></div> <a href="https://github.com/NexusFeng/vue-table-scroll.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Guide</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue-table-scroll/guide/" aria-current="page" class="sidebar-link">数据配置</a></li><li><a href="/vue-table-scroll/guide/options.html" class="sidebar-link">options</a></li><li><a href="/vue-table-scroll/guide/event.html" class="sidebar-link">事件</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Examples</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue-table-scroll/guide/basic.html" class="sidebar-link">默认配置</a></li><li><a href="/vue-table-scroll/guide/speed.html" aria-current="page" class="active sidebar-link">滚动速度</a></li><li><a href="/vue-table-scroll/guide/width.html" class="sidebar-link">设置列宽度</a></li><li><a href="/vue-table-scroll/guide/isIndex.html" class="sidebar-link">行序号</a></li><li><a href="/vue-table-scroll/guide/bodyHeight.html" class="sidebar-link">设置表体高度</a></li><li><a href="/vue-table-scroll/guide/singleStepMove.html" class="sidebar-link">单步滚动</a></li><li><a href="/vue-table-scroll/guide/hidden.html" class="sidebar-link">隐藏列</a></li><li><a href="/vue-table-scroll/guide/lineClick.html" class="sidebar-link">行点击事件</a></li><li><a href="/vue-table-scroll/guide/hoverStop.html" class="sidebar-link">关闭悬停</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="滚动速度"><a href="#滚动速度" class="header-anchor">#</a> 滚动速度</h1> <!----> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table-scroll</span>
+      <span class="token attr-name">:table-header</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>tableHeader<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:table-data</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>tableData<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:options</span> <span class="token attr-value"><span class="token punctuation attr-equals">=</span> <span class="token punctuation">&quot;</span>options<span class="token punctuation">&quot;</span></span>
+    <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">tableHeader</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span><span class="token literal-property property">label</span><span class="token operator">:</span> <span class="token string">'日期'</span><span class="token punctuation">,</span> <span class="token literal-property property">prop</span><span class="token operator">:</span> <span class="token string">&quot;date&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span><span class="token literal-property property">label</span><span class="token operator">:</span> <span class="token string">'姓名'</span><span class="token punctuation">,</span> <span class="token literal-property property">prop</span><span class="token operator">:</span> <span class="token string">&quot;name&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span><span class="token literal-property property">label</span><span class="token operator">:</span> <span class="token string">'地址'</span><span class="token punctuation">,</span> <span class="token literal-property property">prop</span><span class="token operator">:</span> <span class="token string">&quot;address&quot;</span><span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">tableData</span><span class="token operator">:</span><span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token literal-property property">date</span><span class="token operator">:</span> <span class="token string">'2016-05-02'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'王小虎'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">address</span><span class="token operator">:</span> <span class="token string">'上海市普陀区金沙江路 1518 弄'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">date</span><span class="token operator">:</span> <span class="token string">'2016-05-04'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'王小虎'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">address</span><span class="token operator">:</span> <span class="token string">'上海市普陀区金沙江路 1517 弄'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">date</span><span class="token operator">:</span> <span class="token string">'2016-05-01'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'王小虎'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">address</span><span class="token operator">:</span> <span class="token string">'上海市普陀区金沙江路 1519 弄'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">date</span><span class="token operator">:</span> <span class="token string">'2016-05-01'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'王小虎'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">address</span><span class="token operator">:</span> <span class="token string">'上海市普陀区金沙江路 1519 弄'</span>
+      <span class="token punctuation">}</span> <span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">date</span><span class="token operator">:</span> <span class="token string">'2016-05-01'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'王小虎'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">address</span><span class="token operator">:</span> <span class="token string">'上海市普陀区金沙江路 1519 弄'</span>
+      <span class="token punctuation">}</span> <span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">date</span><span class="token operator">:</span> <span class="token string">'2016-05-01'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'王小虎'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">address</span><span class="token operator">:</span> <span class="token string">'上海市普陀区金沙江路 1519 弄'</span>
+      <span class="token punctuation">}</span> <span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">date</span><span class="token operator">:</span> <span class="token string">'2016-05-01'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'王小虎'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">address</span><span class="token operator">:</span> <span class="token string">'上海市普陀区金沙江路 1519 弄'</span>
+      <span class="token punctuation">}</span> <span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">date</span><span class="token operator">:</span> <span class="token string">'2016-05-01'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'王小虎'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">address</span><span class="token operator">:</span> <span class="token string">'上海市普陀区金沙江路 1519 弄'</span>
+      <span class="token punctuation">}</span> <span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">date</span><span class="token operator">:</span> <span class="token string">'2016-05-01'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'王小虎'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">address</span><span class="token operator">:</span> <span class="token string">'上海市普陀区金沙江路 1519 弄'</span>
+      <span class="token punctuation">}</span> <span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">date</span><span class="token operator">:</span> <span class="token string">'2016-05-01'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'王小虎'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">address</span><span class="token operator">:</span> <span class="token string">'上海市普陀区金沙江路 1519 弄'</span>
+      <span class="token punctuation">}</span> <span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">date</span><span class="token operator">:</span> <span class="token string">'2016-05-01'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'王小虎'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">address</span><span class="token operator">:</span> <span class="token string">'上海市普陀区金沙江路 1519 弄'</span>
+      <span class="token punctuation">}</span> 
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">options</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">step</span><span class="token operator">:</span> <span class="token number">2</span>
+    <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vue-table-scroll/guide/basic.html" class="prev">
+        默认配置
+      </a></span> <span class="next"><a href="/vue-table-scroll/guide/width.html">
+        设置列宽度
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/vue-table-scroll/assets/js/app.5eac3da6.js" defer></script><script src="/vue-table-scroll/assets/js/3.e5ea6f79.js" defer></script><script src="/vue-table-scroll/assets/js/32.4f019836.js" defer></script>
+  </body>
+</html>
